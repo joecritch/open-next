@@ -17,6 +17,8 @@ Here are the old build args and their new equivalent:
 - `--dangerously-disable-dynamodb-cache`: `dangerous.disableTagCache` inside the config file.
 - `--dangerously-disable-incremental-cache`: `dangerous.disableIncrementalCache` inside the config file.
 
+Also, the server lambda's default build path has changed from `.open-next/server-function` to `.open-next/server-functions/default`, so any supporting infrastructure will need to be reconfigured.
+
 #### Vercel
 
 Everything should already be set up for you. But there are a few things you should know:
